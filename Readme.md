@@ -1,6 +1,10 @@
 
-::::EventMaster::::
+# EventMaster
 EventMaster is a database systems project for manging events organized by organizers and their attendees. This project to demonstrate database design, implementation, and integration with a front-end application. The system is designed to manage events, organizers, and attendees efficiently.
+
+Video Link: https://drive.google.com/file/d/1L-JVbhAQy9uRj3PEWmkvFNTvzxwj2itF/view?usp=sharing
+GitHub Link: https://github.com/teja996/EventMaster
+please open master branch.
 
 Table of Contents:
 Overview
