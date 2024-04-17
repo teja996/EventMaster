@@ -1,0 +1,237 @@
+/* Import Artistic Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2d; /* Dark blue-gray background */
+    color: #f1f3f4; /* Light text color */
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Home Page */
+.home-page {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Pacifico', cursive;
+    color: #f4a261; /* Orange color for artistic heading */
+    margin-bottom: 20px;
+    letter-spacing: 1.5px; /* Add letter spacing */
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #353540; /* Darker gray for input background */
+    color: #f1f3f4; /* Light text color */
+}
+
+.search-bar input::placeholder {
+    color: #a0a0b2; /* Gray placeholder color */
+}
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.event-item {
+    background-color: #2c2c38; /* Dark gray background for event cards */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    border: 2px solid #3a3a4b; /* Slightly darker border */
+}
+
+.event-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    border-color: #f4a261; /* Orange border on hover */
+}
+
+.event-item h2 {
+    font-size: 28px;
+    font-family: 'Lobster', cursive;
+    color: #f1f3f4;
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #b1b3b8; /* Light gray color */
+}
+
+.event-item p:last-child {
+    margin-bottom: 0;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #34495e; /* Dark blue background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-bar ul li {
+  margin-right: 20px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #ecf0f1; /* Light text color */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-bar ul li a:hover {
+  color: #f4a261; /* Orange color on hover */
+}
+
+.login-button {
+  background-color: #e74c3c; /* Red background */
+  color: #ecf0f1; /* Light text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+
+/* Style for the create event form */
+.create-event-form {
+  background-color: #022548; /* Light gray background */
+  border: 1px solid #061829; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the form */
+  margin: 20px 0; /* Margin to separate from other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling for form labels */
+.create-event-form label {
+  display: block; /* Make the label take up the full width */
+  margin-bottom: 6px; /* Space below the label */
+  font-weight: 500; /* Semi-bold font */
+  color: #f7fbff; /* Dark text color */
+}
+
+/* Styling for form inputs */
+.create-event-form input[type="text"],
+.create-event-form input[type="number"],
+.create-event-form input[type="date"],
+.create-event-form textarea {
+  width: 50%; /* Full width */
+  padding: 8px; /* Padding inside the input */
+  margin-bottom: 10px; /* Space below each input */
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Larger font size */
+  background-color: #b5b2b2; /* White background */
+  color: #1b1d1e; /* Dark text color */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); /* Subtle inset shadow */
+}
+
+/* Styling for the text area */
+.create-event-form textarea {
+  height: 100px; /* Set a fixed height */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Styling for the submit button */
+.create-event-form button {
+  background-color: #28a745; /* Green background */
+  color: #ffffff; /* White text */
+  padding: 10px 15px; /* Padding around the button */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Add hover effect for the button */
+.create-event-form button:hover {
+  background-color: #145e24; /* Darker green on hover */
+}
+
+
+
+/* EventDetails.css */
+.attendee-list {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #4a4e69; /* Dark blue border */
+  border-radius: 8px;
+  background-color: #2c2f45; /* Dark blue background */
+}
+
+.attendee-details {
+  display: flex; /* Use flexbox to align items inline */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #3b3f5a; /* Slightly lighter dark blue background */
+  color: #e9e9f3; /* Light gray text color */
+}
+
+.attendee-details p {
+  margin: 0 10px; /* Add horizontal spacing between text elements */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.attendee-details button {
+  padding: 8px 12px;
+  background-color: #617ab3; /* Dark blue background for button */
+  color: #e9e9f3; /* Light gray text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.attendee-details button:hover {
+  background-color: #4a5b9a; /* Darker blue on hover */
+}
