@@ -14,6 +14,6 @@ build/
 # Other system files
 .DS_Store
 
-event-master/src/EventDetails.jsx
+
 event-master/src/NavBar.jsx
 event-master/src/MoreInfo.jsx
