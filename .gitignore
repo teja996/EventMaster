@@ -15,5 +15,5 @@ build/
 .DS_Store
 
 
-event-master/src/NavBar.jsx
+
 event-master/src/MoreInfo.jsx
